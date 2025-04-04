@@ -18,7 +18,7 @@ int menuJuego(){
     printf("1. Piedra\n");
     printf("2. Papel\n");
     printf("3. Tijera\n");
-    printf("Elija una opción: ");
+    printf("Elija una opciÃ³n: ");
     scanf("%d", &jugador);
 
     return jugador;
@@ -59,11 +59,11 @@ void jugadorElige(int a){
 void juego(int a, int b, char nombre){
 
     if(a==b){
-        printf("\n¡Empate!\n");
+        printf("\nÂ¡Empate!\n");
     }else if((a==1 && b==2)||(a==2 && b==3)||(a==3 && b==1)){
-        printf("\n¡Gana Consola!\n\tGAME OVER\n");
+        printf("\nÂ¡Gana Consola!\n\tGAME OVER\n");
     }else if((a==1 && b==3)||(a==2 && b==1)||(a==3 && b==2)){
-        printf("\n¡Ganaste!\n");
+        printf("\nÂ¡Ganaste!\n");
     }
 }
 
@@ -80,6 +80,7 @@ int main(){
     char nombre[TAM_NOMBRE];
     int opcion, salir;
 
+    //pantalla principal
     printf("%sPIEDRA, PAPEL O TIJERA%s\n", titulo, normal);
     system("\nPAUSE");
 
@@ -87,7 +88,7 @@ int main(){
 
     //MENU PRINCIPAL
     system("cls");
-    printf("%s--- MENÚ PRINCIPAL ---%s\n", titulo, normal);
+    printf("%s--- MENÃš PRINCIPAL ---%s\n", titulo, normal);
     printf("1) Jugar Partida\n");
     printf("2) Ver puntajes\n");
     printf("3) Salir\n");
